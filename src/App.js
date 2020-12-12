@@ -1,11 +1,9 @@
-//import './App.css';
+import './App.css';
 import Netflix from './component/Netflix/Netflix.js'
 
 function App() {
   return (
-    <div>
       <Netflix />
-    </div>
   );
 }
 

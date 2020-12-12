@@ -1,7 +1,8 @@
 .App {
   padding: 10px;
   box-sizing: border-box;
-  display: flex;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .App-Bar {
@@ -16,7 +17,7 @@
   text-decoration: none;
 }
 
-.LoginButton a{
+.LoginButton {
   color: #FFFFFF;
   text-decoration: none;
   border: 1px solid #FFFFFF;
@@ -24,4 +25,5 @@
   padding: 2px 10px;
   position: absolute;
   right: 20px;
+  top: 10px;
 }
