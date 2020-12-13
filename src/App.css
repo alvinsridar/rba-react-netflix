@@ -17,9 +17,9 @@
   text-decoration: none;
 }
 
-.LoginButton {
+.btn {
   color: #FFFFFF;
-  text-decoration: none;
+  background-color: #000000;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   padding: 2px 10px;

@@ -1,9 +1,7 @@
 import React from 'react'
 
-export default function LoginButton() {
+export default function LoginButton(props) {
     return (
-            <a className="LoginButton" href="/#login">
-                Login
-            </a>
+        <button className="btn" onClick={props.login}>Log In</button>
     );
 }
