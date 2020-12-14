@@ -5,9 +5,8 @@ import AppLogo from '../Logo/AppLogo.js'
 import logo from '../Logo/netflix-logo.svg'
 import NavItem from '../NavItem/NavItem.js'
 import LoginButton from '../LoginButton/LoginButton.js'
-import Clock from '../Clock/Clock.js'
-import Counter from '../Counter/Counter.js'
 import LogoutButton from '../LogoutButton/LogoutButton.js'
+import ToDoList from '../ToDoList/ToDoList.js'
 
 //class component, extends Component to use render()
 //only one default export is allowed
@@ -48,8 +47,7 @@ export default class Netflix extends Component {
                     <NavItem text="My List" path="/#myList" />
                 </AppBar>
                 {loginBtn}
-                <Clock/>
-                <Counter/>
+                <ToDoList/>
             </div>
         )
     }
