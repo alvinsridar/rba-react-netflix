@@ -1,0 +1,6 @@
+.magazine-list__container {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+    width: 100%;
+}

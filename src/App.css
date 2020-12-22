@@ -1,3 +1,7 @@
+body {
+  color: #FFFFFF;
+}
+
 .App {
   padding: 10px;
   box-sizing: border-box;
@@ -9,10 +13,11 @@
   min-width: 100px ;
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 400px;
+  min-width: 400px;
 }
 
-.App-Bar div a {
+.App-Bar a {
   color: #FFFFFF;
   text-decoration: none;
 }

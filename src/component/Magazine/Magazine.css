@@ -1,0 +1,12 @@
+.magazine__image {
+    width: 400px;
+    min-width: 400px;
+}
+
+.magazine {
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+.magazine__date {
+    text-align: center;
+}
