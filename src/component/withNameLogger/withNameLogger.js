@@ -8,7 +8,8 @@ const EnhancedComponent = (OriginalComponent) => {
         }
 
         render() {
-            return <OriginalComponent {...this.props} />
+            return <OriginalComponent />
+            //{...this.props} is only needed if OriginalComponent has props passed to it
         }
     };
 };
