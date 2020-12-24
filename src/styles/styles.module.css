@@ -1,0 +1,71 @@
+/* General styles */
+.logBtn {
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 2px 10px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+  
+.logBtn:active {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.defaultText {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.app {
+    padding: 10px;
+    box-sizing: border-box;
+}
+  
+.appBar {
+    min-width: 100px ;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    min-width: 400px;
+}
+
+  /* Magazine styles */
+.magazineListContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.magazineImage {
+    width: 400px;
+    min-width: 400px;
+}
+
+.magazine {
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+.magazineDate {
+    text-align: center;
+}
+
+  /* Poster styles */
+.posterListContainer {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.posterImage {
+    width: 200px;
+    min-width: 200px;
+}
+
+.poster {
+    margin: 0rem 1rem 0rem 0rem;
+}

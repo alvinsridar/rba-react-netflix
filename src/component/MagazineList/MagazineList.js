@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Magazine from '../Magazine/Magazine.js';
-import './MagazineList.css';
+import styles from '../../styles/styles.module.css';
 
 export default class MagazineList extends Component {
     //states to hold the data
@@ -28,9 +28,9 @@ export default class MagazineList extends Component {
     render() {
         //pass states to Magazine component using map
         return (
-            <div className='magazine-list'>
+            <div>
                 <h3>travel 360</h3>
-                <div className='magazine-list__container'>
+                <div className={`${styles.magazineListContainer}`}>
                     {this.state.mags.map((mag, index) => {
                         return <Magazine key={index} imageSource={mag.heroImage} alt={mag.title} month={mag.month} year={mag.year}/>
                     })}

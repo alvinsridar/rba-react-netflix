@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Netflix from './component/Netflix/Netflix.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Netflix />
   </React.StrictMode>,
   document.getElementById('root')
 );

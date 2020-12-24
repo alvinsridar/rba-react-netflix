@@ -1,11 +1,11 @@
 import React from 'react';
-import './Magazine.css';
+import styles from '../../styles/styles.module.css';
 
 export default function Magazine(props) {
     return(
-        <div className='magazine'>
-            <img className='magazine__image' src={props.imageSource} alt={props.alt} />
-            <p className='magazine__date'>{issueDate(props.month, props.year)}</p>
+        <div className={`${styles.magazine}`}>
+            <img className={`${styles.magazineImage}`} src={props.imageSource} alt={props.alt} />
+            <p className={`${styles.magazineDate}`}>{issueDate(props.month, props.year)}</p>
         </div>
     );
 };

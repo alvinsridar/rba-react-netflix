@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../../routes/Home.js';
 import MyList from '../../routes/MyList.js';
 import Magazines from '../../routes/Magazines.js';
+import styles from '../../styles/styles.module.css';
 
 //class component, extends Component to use render()
 //only one default export is allowed
@@ -44,7 +45,7 @@ export default class Netflix extends Component {
 
         return (
             <Router>
-                <div className="App">
+                <div className={`${styles.app}`}>
                     <AppBar>
                         <AppLogo logo={logo} logoAlt="" />
                         <NavItem text="Home" path="/" />
@@ -53,7 +54,7 @@ export default class Netflix extends Component {
                     </AppBar>
                     {loginBtn}
                 </div>
-                <main>
+                <main className={`${styles.defaultText}`}>
                     <Switch>
                         <Route exact path="/"><Home userName={this.state.userName}/></Route>
                         <Route path="/myList"><MyList userName={this.state.userName}/></Route>
