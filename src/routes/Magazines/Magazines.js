@@ -1,5 +1,5 @@
-import MagazineList from '../component/MagazineList/MagazineList.js';
-import withNameLogger from '../component/withNameLogger/withNameLogger.js'
+import MagazineList from '../../component/MagazineList/MagazineList.js';
+import withNameLogger from '../../component/withNameLogger/withNameLogger.js';
 
 const MagazineListWithNameLoggger = withNameLogger(MagazineList);
 

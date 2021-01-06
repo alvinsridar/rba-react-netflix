@@ -32,7 +32,7 @@
     min-width: 400px;
 }
 
-  /* Magazine styles */
+/* Magazine styles */
 .magazineListContainer {
     display: flex;
     align-items: flex-start;
@@ -53,7 +53,7 @@
     text-align: center;
 }
 
-  /* Poster styles */
+/* Poster styles */
 .posterListContainer {
     display: flex;
     align-items: flex-start;
@@ -68,4 +68,32 @@
 
 .poster {
     margin: 0rem 1rem 0rem 0rem;
+}
+
+/* Show Details styles */
+.showDetails {
+    max-width: 60%;
+    min-width: 500px;
+    margin: auto;
+}
+
+.detailsImage {
+    width: 100%;
+}
+
+.detailsBtn {
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-right: 20px;
+}
+
+.detailsBtn:active {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.detailsBtn:focus {
+    outline: none;
 }

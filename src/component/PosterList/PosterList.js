@@ -9,7 +9,9 @@ export default function PosterList({title, posters = []}) {
             <h3>{title}</h3>
             <div className={`${styles.posterListContainer}`}>
                 {posters.map((poster, index) => {
-                    return <Poster key={index} image={poster.poster_path} altName={poster.name} />
+                    const {poster_path, name} = poster;
+                    return <Poster key={index} poster_path={poster_path} name={name} {...poster}/>
+                    //{...poster} passes properties other than poster_path and name, i.e. overview, backdrop_path, which are used in ShowDetails
                 })}
             </div>
         </div>
