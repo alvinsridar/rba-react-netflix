@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rba-react-netflix/static/css/main.40c0c47c.chunk.css",
-    "main.js": "/rba-react-netflix/static/js/main.277a21b1.chunk.js",
-    "main.js.map": "/rba-react-netflix/static/js/main.277a21b1.chunk.js.map",
+    "main.js": "/rba-react-netflix/static/js/main.4ef89e59.chunk.js",
+    "main.js.map": "/rba-react-netflix/static/js/main.4ef89e59.chunk.js.map",
     "runtime-main.js": "/rba-react-netflix/static/js/runtime-main.0099b26c.js",
     "runtime-main.js.map": "/rba-react-netflix/static/js/runtime-main.0099b26c.js.map",
     "static/js/2.20570596.chunk.js": "/rba-react-netflix/static/js/2.20570596.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.0099b26c.js",
     "static/js/2.20570596.chunk.js",
     "static/css/main.40c0c47c.chunk.css",
-    "static/js/main.277a21b1.chunk.js"
+    "static/js/main.4ef89e59.chunk.js"
   ]
 }
