@@ -12,6 +12,9 @@ import MyList from '../../routes/MyList/MyList.js';
 import Magazines from '../../routes/Magazines/Magazines.js';
 import styles from '../../styles/styles.module.css';
 import ShowDetails from '../../routes/ShowDetails/ShowDetails.js';
+import UserContext from '../../context/UserContext.js';
+import ShowContext from '../../context/ShowContext.js';
+import MyListContextProvider from '../../context/MyListContext.js';
 
 //class component, extends Component to use render()
 //only one default export is allowed
@@ -88,28 +91,37 @@ export default class Netflix extends Component {
             );
 
         return (
-            <Router>
-                <div className={`${styles.app}`}>
-                    <AppBar>
-                        <AppLogo logo={logo} logoAlt='' />
-                        <NavItem text='Home' path='/' />
-                        <NavItem text='My List' path='/myList' />
-                        <NavItem text='Magazine' path='/magazines' />
-                    </AppBar>
-                    {loginBtn}
-                </div>
-                <main className={`${styles.defaultText}`}>
-                    <Switch>
-                        <Route exact path='/'>
-                            <Home userName={this.state.userName} netflixOriginals={this.state.netflixOriginals} trendingNow={this.state.trendingNow} />
-                        </Route>
-                        <Route exact path='/myList'><MyList userName={this.state.userName} /></Route>
-                        <Route exact path='/magazines'><Magazines /></Route>
-                        <Route exact path='/showDetails'><ShowDetails {...this.state} /></Route>
-                        {/* use URL params to set vairable path names, e.g. /show/:id/:name */}
-                    </Switch>
-                </main>
-            </Router>
+            <UserContext.Provider value={{
+                isLoggedIn: this.state.isLoggedIn,
+                userName: this.state.userName
+            }}>
+                <ShowContext.Provider value={{
+                    netflixOriginals: this.state.netflixOriginals,
+                    trendingNow: this.state.trendingNow
+                }}>
+                    <MyListContextProvider>
+                        <Router>
+                            <div className={`${styles.app}`}>
+                                <AppBar>
+                                    <AppLogo logo={logo} logoAlt='' />
+                                    <NavItem text='Home' path='/' />
+                                    <NavItem text='My List' path='/myList' />
+                                    <NavItem text='Magazine' path='/magazines' />
+                                </AppBar>
+                                {loginBtn}
+                            </div>
+                            <main className={`${styles.defaultText}`}>
+                                <Switch>
+                                    <Route exact path='/'><Home /></Route>
+                                    <Route exact path='/myList'><MyList /></Route>
+                                    <Route exact path='/magazines'><Magazines /></Route>
+                                    <Route exact path='/showDetails'><ShowDetails /></Route>
+                                </Switch>
+                            </main>
+                        </Router>
+                    </MyListContextProvider>
+                </ShowContext.Provider>
+            </UserContext.Provider>
         )
     }
 }
